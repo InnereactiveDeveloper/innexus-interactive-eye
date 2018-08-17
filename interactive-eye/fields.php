@@ -103,7 +103,7 @@ function interactive_eye_func( $atts, $content = "" )
 					$interactive_eye_output .= '$(".iris").click(function()';
 					$interactive_eye_output .= '{';
 						$interactive_eye_output .= 'showonly(".irisimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Transparent, gelatinous mass which fills two-thirds of the eye between the lens and the retina.";';
+						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Flat, circular membrane forming the colored portion of the eye, with an adjustable circular opening, the pupil, in the center.";';
 						$interactive_eye_output .= '$("#description").show();';
 					$interactive_eye_output .= '});';
 				$interactive_eye_output .= '});';
