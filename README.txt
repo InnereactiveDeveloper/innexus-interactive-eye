@@ -10,7 +10,7 @@ The Innexus Interactive Eye Module is intended for use with the Innexus website 
 
 == Description ==
 
-Adds [interactive-eye] as a shortcode to be place wherever needed.
+Adds [interactive-eye] as a shortcode to be places wherever needed.
 
 == Changelog ==
 
