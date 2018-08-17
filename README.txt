@@ -2,7 +2,7 @@
 Contributors: joshglovak, getinnexus
 Donate link: https://www.getinnexus.com
 Tags:
-Stable tag: 1.00
+Stable tag: 1.01
 Requires at least: 4.8
 Tested up to: 4.9.6
 
