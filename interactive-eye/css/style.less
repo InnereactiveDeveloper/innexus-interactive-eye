@@ -1,0 +1,528 @@
+@color_1: #333;
+@color_2: #000;
+@font_family_1: Arial, Helvetica, sans-serif;
+@background_color_1: transparent;
+
+.interactive-eye-wrapper
+{
+	#contain23 
+	{
+		width: 500px !important;
+		margin: 50px auto;
+		font-family: @font_family_1;
+		line-height: normal;
+		word-spacing: normal;
+	}
+	
+	#eye 
+	{
+		padding-top: 20px;
+		float: left;
+		margin-bottom: 10px;
+		text-align: left;
+		background-color: @background_color_1;
+		
+		td 
+		{
+			padding: 5px;
+			vertical-align: text-top;
+		}
+	}
+	
+	.eyeball 
+	{
+		z-index: 1 !important;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	#maineye 
+	{
+		float: right;
+		width: 350px;
+		margin-bottom: 20px;
+		position: relative;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.name 
+	{
+		font-weight: 700;
+		color: @color_1;
+	}
+	
+	button 
+	{
+		font-family: @font_family_1;
+		font-weight: 600;
+		font-size: 82%;
+		width: 100px;
+		line-height: 26px;
+		margin-right: 15px;
+		margin-left: 25px;
+		margin-bottom: 5px;
+		padding: 2px 0 2px 0;
+	}
+	
+	.description 
+	{
+		font-size: 90%;
+		color: @color_1;
+		padding-left: 15px;
+		margin-top: 20px;
+		position: absolute;
+	}
+	
+	#description 
+	{
+		display: none;
+	}
+	
+	a 
+	{
+		text-decoration: none;
+		color: @color_2;
+	}
+	
+	.inxlogo 
+	{
+		position: relative;
+		top: -10px;
+		left: 300px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.eyelidimage 
+	{
+		display: none;
+		position: absolute;
+		top: 3px;
+		left: 0px;
+		z-index: 990;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.corneaimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 190;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.irisimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 880;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.pupilimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 890;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.lensimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 970;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.retinaimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 900;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.nerveimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 1px;
+		z-index: 120;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.maculaimage 
+	{
+		display: none;
+		position: absolute;
+		top: 3px;
+		left: 0px;
+		z-index: 100;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.foveaimage 
+	{
+		display: none;
+		position: absolute;
+		top: 3px;
+		left: 0px;
+		z-index: 160;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.vitreousimage 
+	{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 146;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.info 
+	{
+		display: inline-block;
+		width: 225px;
+		height: 77px;
+		float: right;
+		padding: 5px;
+	}
+	
+	@media (max-width: 768px) 
+	{
+		#maineye 
+		{
+			width: 275px;
+			height: 280px;
+			margin-right: 28px;
+			vertical-align: top;
+			left: 10px;
+		}
+		.description 
+		{
+			margin-top: 0px;
+			position: inherit;
+			float: left;
+		}
+		#contain23 
+		{
+			width: 310px !important;
+			margin-left: 100px;
+			font-family: @font_family_1;
+			line-height: normal;
+			word-spacing: normal;
+		}
+		button 
+		{
+			margin: 0 0 10px 0;
+			line-height: 25px;
+			float: left;
+		}
+		.vitreous 
+		{
+			margin-left: 105px;
+		}
+		.eyelidimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 990;
+		}
+		.corneaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 190;
+		}
+		.irisimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 880;
+		}
+		.pupilimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 890;
+		}
+		.lensimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 970;
+		}
+		.retinaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 900;
+		}
+		.nerveimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 120;
+		}
+		.maculaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 100;
+		}
+		.foveaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 160;
+		}
+		.vitreousimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 146;
+		}
+	}
+	
+	@media (max-width: 480px) 
+	{
+		#maineye 
+		{
+			width: 275px;
+			height: 280px;
+			vertical-align: top;
+		}
+		#contain23 
+		{
+			margin-left: 25px;
+		}
+		.description 
+		{
+			margin-top: 0px;
+		}
+		.eyelidimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 990;
+		}
+		.corneaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 190;
+		}
+		.irisimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 880;
+		}
+		.pupilimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 890;
+		}
+		.lensimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 970;
+		}
+		.retinaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 900;
+		}
+		.nerveimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 120;
+		}
+		.maculaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 100;
+		}
+		.foveaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 160;
+		}
+		.vitreousimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 146;
+		}
+	}
+	
+	@media (max-width: 320px) 
+	{
+		#maineye 
+		{
+			width: 275px;
+			height: 280px;
+			vertical-align: top;
+		}
+		#contain23 
+		{
+			margin-left: -22px;
+		}
+		.description 
+		{
+			margin-top: 0px;
+		}
+		.eyelidimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 990;
+		}
+		.corneaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 190;
+		}
+		.irisimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 880;
+		}
+		.pupilimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 890;
+		}
+		.lensimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 970;
+		}
+		.retinaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 900;
+		}
+		.nerveimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 120;
+		}
+		.maculaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 100;
+		}
+		.foveaimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 160;
+		}
+		.vitreousimage 
+		{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 146;
+		}
+	}
+
+}
