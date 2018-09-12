@@ -2,7 +2,7 @@
 Contributors: joshglovak, getinnexus
 Donate link: https://www.getinnexus.com
 Tags:
-Stable tag: 1.02
+Stable tag: 1.02.01
 Requires at least: 4.8
 Tested up to: 4.9.6
 
@@ -10,7 +10,7 @@ The Innexus Interactive Eye Module is intended for use with the Innexus website 
 
 == Description ==
 
-Adds [interactive-eye] as a shortcode to be places wherever needed.
+Adds [interactive-eye] as a shortcode to be placed wherever needed.
 
 == Changelog ==
 
