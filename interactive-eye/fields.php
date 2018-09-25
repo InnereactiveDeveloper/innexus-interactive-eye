@@ -18,7 +18,6 @@ function interactive_eye_func( $atts, $content = "" )
 	$interactive_eye_output .= '<!-- Interactive Eye -->';
 		$interactive_eye_output .= '<div class="interactive-eye-wrapper">';
 			$interactive_eye_output .= '<link rel="stylesheet" type="text/css" href="'. XEYE_URL . '/interactive-eye/css/style.css">';
-			$interactive_eye_output .= '<p>';
 				$interactive_eye_output .= '<script>';
 				$interactive_eye_output .= 'jQuery(document).ready(function($)';
 				$interactive_eye_output .= '{';
@@ -108,7 +107,6 @@ function interactive_eye_func( $atts, $content = "" )
 					$interactive_eye_output .= '});';
 				$interactive_eye_output .= '});';
 				$interactive_eye_output .= '</script>';
-			$interactive_eye_output .= '</p>';
 			
 			$interactive_eye_output .= '<div id="contain23">';
 				$interactive_eye_output .= '<!-- Eye Structure -->';
