@@ -9,104 +9,22 @@
  */
 
 //Shortcode
-function interactive_eye_func( $atts, $content = "" ) 
+function interactive_eye_func( $atts, $content = "") 
 {
+	// normalize attribute keys, lowercase
+    $atts = array_change_key_case((array)$atts, CASE_LOWER);
+ 
+    // override default attributes with user attributes
+    $a = shortcode_atts(
+    [
+		'language' => 'english',
+	], $atts);
 	
 	//Blank Interactive Eye Output
 	$interactive_eye_output = '';
 	
 	$interactive_eye_output .= '<!-- Interactive Eye -->';
-		$interactive_eye_output .= '<div class="interactive-eye-wrapper">';
-			$interactive_eye_output .= '<link rel="stylesheet" type="text/css" href="'. XEYE_URL . '/interactive-eye/css/style.css">';
-				$interactive_eye_output .= '<script>';
-				$interactive_eye_output .= 'jQuery(document).ready(function($)';
-				$interactive_eye_output .= '{';
-					$interactive_eye_output .= 'function showonly(element)';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= '$(".eyelidimage").hide();';
-						$interactive_eye_output .= '$(".corneaimage").hide();';
-						$interactive_eye_output .= '$(".irisimage").hide();';
-						$interactive_eye_output .= '$(".pupilimage").hide();';
-						$interactive_eye_output .= '$(".lensimage").hide();';
-						$interactive_eye_output .= '$(".foveaimage").hide();';
-						$interactive_eye_output .= '$(".maculaimage").hide();';
-						$interactive_eye_output .= '$(".retinaimage").hide();';
-						$interactive_eye_output .= '$(".nerveimage").hide();';
-						$interactive_eye_output .= '$(".vitreousimage").hide();';
-						$interactive_eye_output .= '$(element).show();';
-					$interactive_eye_output .= '}';
-					
-					$interactive_eye_output .= '$(".eyelid").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".eyelidimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Upper and lower muscular folds of skin that move to cover and uncover the eyeball.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".cornea").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".corneaimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Transparent front layer of the eye that covers the iris and the pupil. Provides most of the eye\'s optical power.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".pupil").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".pupilimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Dark, circular opening in the center of the iris which varies in size to regular the amount of light reaching the retina.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".lens").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".lensimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Transparent, biconvex tissue that helps bring rays of light to focus on the retina.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".retina").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".retinaimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Cell layers, sensitive to light, receive images produced by the lens and triggers nerve impulses that pass via the optic nerve to the brain.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".nerve").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".nerveimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Pair of cranial nerves, consisting of sensory fibers that transmit sight impulses to the brain.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".macula").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".maculaimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Irregularly oval, yellow-pigmented area on the central retina that contains color-sensitive rods and the region sharpest vision acuity.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".fovea").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".foveaimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Small depression in the retina where visual acuity is highest.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".vitreous").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".vitreousimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Transparent, gelatinous mass which fills two-thirds of the eye between the lens and the retina.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-					
-					$interactive_eye_output .= '$(".iris").click(function()';
-					$interactive_eye_output .= '{';
-						$interactive_eye_output .= 'showonly(".irisimage");';
-						$interactive_eye_output .= 'document.getElementById("description").innerHTML = "Flat, circular membrane forming the colored portion of the eye, with an adjustable circular opening, the pupil, in the center.";';
-						$interactive_eye_output .= '$("#description").show();';
-					$interactive_eye_output .= '});';
-				$interactive_eye_output .= '});';
-				$interactive_eye_output .= '</script>';
+		$interactive_eye_output .= '<div id="interactive-eye-wrapper" class="interactive-eye-wrapper ' . $a["language"] . '-language">';
 			
 			$interactive_eye_output .= '<div id="contain23">';
 				$interactive_eye_output .= '<!-- Eye Structure -->';
