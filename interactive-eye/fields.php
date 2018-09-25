@@ -11,7 +11,7 @@
 //Shortcode
 function interactive_eye_func( $atts, $content = "") 
 {
-	// normalize attribute keys, lowercase
+	//normalize attribute keys, lowercase
     $atts = array_change_key_case((array)$atts, CASE_LOWER);
  
     // override default attributes with user attributes
@@ -20,6 +20,7 @@ function interactive_eye_func( $atts, $content = "")
 		'language' => 'english',
 	], $atts);
 	
+	//Assign attributes to variables for easier use
 	$language = $a["language"];
 	
 	//Blank Interactive Eye Output
@@ -48,21 +49,6 @@ function interactive_eye_func( $atts, $content = "")
 				
 				$interactive_eye_output .= '<!-- Toggles -->';
 				
-				//Spanish toggles
-				if($language == 'spanish')
-				{
-					$interactive_eye_output .= '<button class="eyelid" data-language="spanish" data-language-content="Pliegues musculares superiores e inferiores de la piel que se mueven para cubrir y descubrir el globo ocular."><span class="name">Párpado</span></button>';
-					$interactive_eye_output .= '<button class="cornea" data-language="spanish" data-language-content="Capa frontal transparente del ojo que cubre el iris y la pupila. Proporciona la mayor parte de la potencia óptica del ojo."><span class="name">Córnea</span></button>';
-					$interactive_eye_output .= '<button class="iris" data-language="spanish" data-language-content="Estructura delgada y circular en el ojo, responsable de controlar el diámetro y el tamaño de la pupila y, por lo tanto, la cantidad de luz que llega a la retina."><span class="name">Iris</span></button>';
-					$interactive_eye_output .= '<button class="pupil" data-language="spanish" data-language-content="Abertura oscura y circular en el centro del iris que varía en tamaño a la cantidad regular de luz que llega a la retina."><span class="name">Pupila</span></button>';
-					$interactive_eye_output .= '<button class="lens" data-language="spanish" data-language-content="Tejido biconvexo transparente que ayuda a que los rayos de luz se centren en la retina."><span class="name">Lente</span></button>';
-					$interactive_eye_output .= '<button class="fovea" data-language="spanish" data-language-content="Pequeña depresión en la retina donde la agudeza visual es máxima."><span class="name">Fovea</span></button>';
-					$interactive_eye_output .= '<button class="macula" data-language="spanish" data-language-content="Área irregularmente ovalada, pigmentada de amarillo en la retina central que contiene varillas sensibles al color y la agudeza visual más nítida de la región."><span class="name">Màcula</span></button>';
-					$interactive_eye_output .= '<button class="retina" data-language="spanish" data-language-content="Las capas celulares, sensibles a la luz, reciben imágenes producidas por la lente y activan impulsos nerviosos que pasan a través del nervio óptico hacia el cerebro."><span class="name">Retina</span></button>';
-					$interactive_eye_output .= '<button class="nerve" data-language="spanish" data-language-content="Par de nervios craneales, que consta de fibras sensoriales que transmiten impulsos visuales al cerebro."><span class="name">Nervio óptico</span></button>';
-					$interactive_eye_output .= '<button class="vitreous" data-language="spanish" data-language-content="Masa transparente y gelatinosa que llena dos tercios del ojo entre la lente y la retina."><span class="name">Vítreo</span></button>';
-				}
-				
 				//English Toggles
 				if($language == 'english')
 				{
@@ -78,6 +64,20 @@ function interactive_eye_func( $atts, $content = "")
 					$interactive_eye_output .= '<button class="vitreous" data-language="english" data-language-content="Transparent, gelatinous mass which fills two-thirds of the eye between the lens and the retina."><span class="name">Vitreous</span></button>';
 				}
 				
+				//Spanish toggles
+				if($language == 'spanish')
+				{
+					$interactive_eye_output .= '<button class="eyelid" data-language="spanish" data-language-content="Pliegues musculares superiores e inferiores de la piel que se mueven para cubrir y descubrir el globo ocular."><span class="name">Párpado</span></button>';
+					$interactive_eye_output .= '<button class="cornea" data-language="spanish" data-language-content="Capa frontal transparente del ojo que cubre el iris y la pupila. Proporciona la mayor parte de la potencia óptica del ojo."><span class="name">Córnea</span></button>';
+					$interactive_eye_output .= '<button class="iris" data-language="spanish" data-language-content="Estructura delgada y circular en el ojo, responsable de controlar el diámetro y el tamaño de la pupila y, por lo tanto, la cantidad de luz que llega a la retina."><span class="name">Iris</span></button>';
+					$interactive_eye_output .= '<button class="pupil" data-language="spanish" data-language-content="Abertura oscura y circular en el centro del iris que varía en tamaño a la cantidad regular de luz que llega a la retina."><span class="name">Pupila</span></button>';
+					$interactive_eye_output .= '<button class="lens" data-language="spanish" data-language-content="Tejido biconvexo transparente que ayuda a que los rayos de luz se centren en la retina."><span class="name">Lente</span></button>';
+					$interactive_eye_output .= '<button class="fovea" data-language="spanish" data-language-content="Pequeña depresión en la retina donde la agudeza visual es máxima."><span class="name">Fovea</span></button>';
+					$interactive_eye_output .= '<button class="macula" data-language="spanish" data-language-content="Área irregularmente ovalada, pigmentada de amarillo en la retina central que contiene varillas sensibles al color y la agudeza visual más nítida de la región."><span class="name">Màcula</span></button>';
+					$interactive_eye_output .= '<button class="retina" data-language="spanish" data-language-content="Las capas celulares, sensibles a la luz, reciben imágenes producidas por la lente y activan impulsos nerviosos que pasan a través del nervio óptico hacia el cerebro."><span class="name">Retina</span></button>';
+					$interactive_eye_output .= '<button class="nerve" data-language="spanish" data-language-content="Par de nervios craneales, que consta de fibras sensoriales que transmiten impulsos visuales al cerebro."><span class="name">Nervio óptico</span></button>';
+					$interactive_eye_output .= '<button class="vitreous" data-language="spanish" data-language-content="Masa transparente y gelatinosa que llena dos tercios del ojo entre la lente y la retina."><span class="name">Vítreo</span></button>';
+				}
 				
 				$interactive_eye_output .= '<!-- Description -->';
 				$interactive_eye_output .= '<p>';
