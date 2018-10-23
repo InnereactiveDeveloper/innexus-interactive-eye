@@ -10,7 +10,7 @@
  * Description: Innexus Interactive Eye
  * Author: Innexus by Innereactive
  * Author URI: https://www.getinnexus.com
- * Version: 1.03
+ * Version: 1.04
  */
 
 // Exit if accessed directly.
