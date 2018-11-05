@@ -10,7 +10,7 @@
  * Description: Innexus Interactive Eye
  * Author: Innexus by Innereactive
  * Author URI: https://www.getinnexus.com
- * Version: 1.04
+ * Version: 1.04.01
  */
 
 // Exit if accessed directly.
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 // Plugin version.
 if ( ! defined( 'XEYE_VERSION' ) ) {
-	define( 'XEYE_VERSION', '1.03' );
+	define( 'XEYE_VERSION', '1.04.01' );
 }
 
 if ( ! defined( 'XEYE_NAME' ) ) {
